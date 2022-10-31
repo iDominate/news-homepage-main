@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <img src="./assets/images/logo.svg" alt="logo">
+
+    <ul class="menu">
+      <i class="material-icons close">close</i>
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul>
+    <button type="button" id="nav-btn"><i class="material-icons">menu</i></button>
+    <div class="nav-overlay">
+
+    </div>
+  </nav>
+
+  <main>
+    <section class="upper-section">
+      <section>
+        <img src="./assets/images/image-web-3-desktop.jpg" class="main-img" alt="image">
+        <div class="text-section">
+          <div class="left">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="right">
+            <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people.
+              But is it really fulfilling its promise?</p>
+            <button>Read more</button>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <h1>New</h1>
+        <section>
+          <h1>Hydrogen VS Electric Cars</h1>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <hr>
+        </section>
+        <section>
+          <h1>The Downsides of AI Artistry</h1>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          <hr>
+        </section>
+        <section>
+          <h1>Is VC Funding Drying Up?</h1>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </section>
+      </aside>
+    </section>
+    <section class="lower-section">
+      <section>
+        <div class="img">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" srcset="">
+        </div>
+        <div class="text">
+          <h1>01</h1>
+          <h1>Reviving Retro PCs</h1>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </section>
+      <section>
+        <div class="img">
+          <img src="./assets/images/image-top-laptops.jpg" alt="" srcset="">
+        </div>
+        <div class="text">
+          <h1>02</h1>
+          <h1>Top 10 Laptops of 2022</h1>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </section>
+      <section>
+        <div class="img">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" srcset="">
+        </div>
+        <div class="text">
+          <h1>03</h1>
+          <h1>The Growth of Gaming</h1>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.querySelector('.nav');
+      document.querySelector('#nav-btn').addEventListener('click', () => {
+        nav.classList.add('nav-open');
+        console.log("Hello World");
+      });
+
+      document.querySelector('.nav-overlay').addEventListener('click', () => {
+        nav.classList.remove('nav-open');
+      });
+
+      document.querySelector('.close').addEventListener('click', () => {
+        nav.classList.remove('nav-open');
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
