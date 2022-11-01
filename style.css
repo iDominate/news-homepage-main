@@ -33,7 +33,7 @@ nav {
 
 nav>ul {
     display: flex;
-
+    margin-left: 20%;
     list-style-type: none;
 }
 
@@ -429,6 +429,7 @@ nav>button {
 
     .nav-open nav>ul {
         transform: translateX(-190px);
+
     }
 
     nav>ul>li {
